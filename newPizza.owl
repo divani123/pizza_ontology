@@ -1,0 +1,747 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#"
+     xml:base="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLObjectProperty_ec425960_ec7a_4f71_b7bf_315642299176 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLObjectProperty_ec425960_ec7a_4f71_b7bf_315642299176">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Pizza"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_b1c3011f_f43f_4fe2_88d0_caa528e3fafe"/>
+        <rdfs:label xml:lang="en">hasSpiciness</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasBase">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasIngredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasIngredient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasIngredient"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#isToppingOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Pizza"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#PizzaBase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#isBaseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#isBaseOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#isIngredientOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#isIngredientOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#isIngredientOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#isToppingOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#isToppingOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#isIngredientOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#PizzaBase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Pizza"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLDataProperty_a03c8790_db1b_47d7_897a_90bed51219f4 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLDataProperty_a03c8790_db1b_47d7_897a_90bed51219f4">
+        <rdfs:label xml:lang="en">hasCaloricContentValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#AmericanHotPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#AmericanHotPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Mozarella"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Peperoni"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Tomato"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#pepper"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Mozarella"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Peperoni"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Tomato"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#pepper"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#AmericanPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#AmericanPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Mozarella"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Peperoni"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Tomato"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Mozarella"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Peperoni"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Tomato"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Ancovy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Ancovy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Seafood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Caper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Caper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Vegitable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Cheese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Cheese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#CheesyPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#CheesyPizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Cheese"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Pizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Cheese"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#DeepPanBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#DeepPanBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Ham -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Ham">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#MargheritaPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#MargheritaPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Mozarella"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Tomato"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Mozarella"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Tomato"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Meat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Meat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Mozarella -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Mozarella">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Cheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#NamedPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#NamedPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Pizza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_02e09581_c49c_4abb_996a_b0fb66ca5a3a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_02e09581_c49c_4abb_996a_b0fb66ca5a3a">
+        <rdfs:label xml:lang="en">ValuePartition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_039b99c0_44ae_47a3_8007_d67b354dfb95 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_039b99c0_44ae_47a3_8007_d67b354dfb95">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#VegitablePizza"/>
+        <rdfs:label xml:lang="en">Margheritapizza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_12ad612c_cfde_4782_901c_2becc7b86c92 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_12ad612c_cfde_4782_901c_2becc7b86c92">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_b1c3011f_f43f_4fe2_88d0_caa528e3fafe"/>
+        <rdfs:label xml:lang="en">Medium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_35e5718d_0559_48cf_afec_ae698be6a0c4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_35e5718d_0559_48cf_afec_ae698be6a0c4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#VegitablePizza"/>
+        <rdfs:label xml:lang="en">AmericanHotPizza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_3d7f72fd_29de_49ec_b59f_c893e05c4303 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_3d7f72fd_29de_49ec_b59f_c893e05c4303">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#CheesyPizza"/>
+        <rdfs:label xml:lang="en">MargheritaPizza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_3ea4f1f4_23f5_44c2_8025_ec608ec58a00 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_3ea4f1f4_23f5_44c2_8025_ec608ec58a00">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#CheesyPizza"/>
+        <rdfs:label xml:lang="en">AmericanPizza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_42dab497_e5fe_4a76_ad44_2bd07104d733 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_42dab497_e5fe_4a76_ad44_2bd07104d733">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#VegitablePizza"/>
+        <rdfs:label xml:lang="en">SohoPizza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_59685920_49e2_43bf_aed3_e65226cf16ef -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_59685920_49e2_43bf_aed3_e65226cf16ef">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_dae29b14_faeb_4331_a7ba_f03aa4d38f08"/>
+        <rdfs:label xml:lang="en">AmericanHotPizza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_64fc80ed_8c1b_42f6_9153_95f5f80cab0f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_64fc80ed_8c1b_42f6_9153_95f5f80cab0f">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_b1c3011f_f43f_4fe2_88d0_caa528e3fafe"/>
+        <rdfs:label xml:lang="en">Mild</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_79fc40c1_66ae_48a4_ac2a_32c3c2a43dc4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_79fc40c1_66ae_48a4_ac2a_32c3c2a43dc4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Pizza"/>
+        <rdfs:label xml:lang="en">LowCaloriePizza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_a01ef308_1d30_4deb_a228_874eeaa7cf22 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_a01ef308_1d30_4deb_a228_874eeaa7cf22">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#CheesyPizza"/>
+        <rdfs:label xml:lang="en">sohoPizza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_a387dd94_feda_488f_bb88_734ea7e8cc2f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_a387dd94_feda_488f_bb88_734ea7e8cc2f">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#VegitablePizza"/>
+        <rdfs:label xml:lang="en">AmericanPizza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_b1c3011f_f43f_4fe2_88d0_caa528e3fafe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_b1c3011f_f43f_4fe2_88d0_caa528e3fafe">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_12ad612c_cfde_4782_901c_2becc7b86c92"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_64fc80ed_8c1b_42f6_9153_95f5f80cab0f"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_b77054ef_1081_4ec3_864f_eb0cbfc8dd91"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_02e09581_c49c_4abb_996a_b0fb66ca5a3a"/>
+        <rdfs:label xml:lang="en">SpicinessValuePartition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_b77054ef_1081_4ec3_864f_eb0cbfc8dd91 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_b77054ef_1081_4ec3_864f_eb0cbfc8dd91">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_b1c3011f_f43f_4fe2_88d0_caa528e3fafe"/>
+        <rdfs:label xml:lang="en">Hot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_d3677819_d2bc_4905_b8e9_19306dfcff22 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_d3677819_d2bc_4905_b8e9_19306dfcff22">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLDataProperty_a03c8790_db1b_47d7_897a_90bed51219f4"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLDataProperty_a03c8790_db1b_47d7_897a_90bed51219f4"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Pizza"/>
+        <rdfs:label xml:lang="en">HighCaloriePizza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_dae29b14_faeb_4331_a7ba_f03aa4d38f08 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_dae29b14_faeb_4331_a7ba_f03aa4d38f08">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Pizza"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLObjectProperty_ec425960_ec7a_4f71_b7bf_315642299176"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_b77054ef_1081_4ec3_864f_eb0cbfc8dd91"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Pizza"/>
+        <rdfs:label xml:lang="en">SpicyPizza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_f318576d_0f10_4aea_90ef_b6926f68d19c -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLClass_f318576d_0f10_4aea_90ef_b6926f68d19c">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#CheesyPizza"/>
+        <rdfs:label xml:lang="en">AmericanHotPizza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Olive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Olive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Vegitable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Onion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Onion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Vegitable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Parmesan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Parmesan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Cheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Peperoni -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Peperoni">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Pizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Pizza">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasBase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#PizzaBase"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#OWLDataProperty_a03c8790_db1b_47d7_897a_90bed51219f4"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#PizzaBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#PizzaBase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#PizzaTopping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#PizzaTopping"/>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Prawa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Prawa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Seafood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Salami -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Salami">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Seafood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Seafood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#SohoPizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#SohoPizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#NamedPizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Mozarella"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Olive"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Parmesan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Tomato"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#hasTopping"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Mozarella"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Olive"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Parmesan"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Tomato"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#SpicyBeaf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#SpicyBeaf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#ThinAndchrispyBase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#ThinAndchrispyBase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#PizzaBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Tomato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Tomato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Vegitable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Tuna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Tuna">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Seafood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Vegitable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Vegitable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#PizzaTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#VegitablePizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#VegitablePizza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Pizza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#mushroom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#mushroom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Vegitable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#pepper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#pepper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/divani/ontologies/2021/8/newPizza.owl#Vegitable"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
